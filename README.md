@@ -2,11 +2,41 @@
 
 ## Multiplatform client/server file cypher application (C, POSIX API, WIN32 API)
 
-Il progetto consiste nella realizzazione di un sistema multipiattaforma di cifratura e decifratura da remoto sotto forma di client e server, installati rispettivamente nel computer “di controllo” e nel computer “vittima”.
-L’obiettivo iniziale era strutturare il progetto in modo tale da produrre un’unica coppia di file client.c e server.c, che, basandosi sull’identificazione del sistema operativo in fase di linking, invocasse funzioni definite con lo stesso nome in header files specifici al sistema operativo riconosciuto, per imitare l’idea di interfaccia del paradigma object-oriented.
-Questa struttura è stata realizzata limitatamente al codice del client, siccome il requisito di attivare il server come un daemon in ambiente Unix/Linux avrebbe già portato alla creazione di un file dal quale iniziare l’esecuzione diverso dal file compilato dal codice in server.c.
-
 This project consists in a multiplatform client/server file cipher application, where the client is installed in the "master" system and the server in the "slave" system.
+
+## How to use it
+
+- Run the included makefile (`make` and `make clean` commands both for Unix/Linux and Windows); this Windows makefile only works if Visual Studio is installed and from a Developer Command Prompt (where `cl.exe` is set up as the C/C++ compiler)
+
+- starting from the same directory where the makefiles are in:
+
+    - /unix/userver.out and client.out are the Unix/Linux executables
+    
+    - wserver.exe and client.exe are the Windows executables
+    
+- Server commands:
+
+    - `-c`
+    
+    - `-p`
+    
+    - `-n`
+    
+    - `-h`
+    
+- Client commands:
+    
+    - `-l`
+    
+    - `-R`
+    
+    - `-e seed path`
+    
+    - `-d seed path`
+    
+    - `-s`
+    
+    - `-h`
 
 ### Notes
 
