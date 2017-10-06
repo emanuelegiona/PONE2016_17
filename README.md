@@ -4,6 +4,10 @@
 
 This project consists in a multiplatform client/server file cipher application, where the client is installed in the "master" system and the server in the "slave" system.
 
+It uses a simple XOR to cipher bytes in a file, using a `rand()` generated number after being specified which seed to use via `srand()`.
+
+**This project is for educational purposes only and should not be taken as a serious attempt at encryption.**
+
 ## How to use it
 
 - Run the included makefile (`make` and `make clean` commands both for Unix/Linux and Windows); this Windows makefile only works if Visual Studio is installed and is run from a Developer Command Prompt (where `cl.exe` is set up as the C/C++ compiler)
