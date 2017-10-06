@@ -66,4 +66,4 @@ This project consists in a multiplatform client/server file cipher application, 
 
 ### Known bugs
 
-- Client file list (-l -R) visualization fails, printing out quite a lot spaces instead of actual file paths; this happens when client and server applications run from different computers. This doesn't happen when both client and server applications run within the same computer.
+- Client file list (`-l` or `-R`) visualization fails, printing out quite a lot spaces instead of actual file paths; this happens when client and server applications run from different computers. This doesn't happen when both client and server applications run within the same computer.
