@@ -14,29 +14,47 @@ This project consists in a multiplatform client/server file cipher application, 
     
     - wserver.exe and client.exe are the Windows executables
     
-- Server commands:
+- **Server commands**:
 
-    - `-c`
+    - `-c path`: sets `path` as working directory, where the server will cipher the files from
     
-    - `-p`
+    - `-p port`: uses `port` as port to listen commands from
     
-    - `-n`
+    - `-n nThreads`: creates a thread pool with `nThreads` threads
     
-    - `-h`
+    - `-h`: shows a help message (currently in Italian only)
     
-- Client commands:
+- **Client commands**:
     
-    - `-l`
+    - `-l`: lists all files in the server's working directory
     
-    - `-R`
+    - `-R`: lists all files in the server's working directory and any subdirectory of it
     
-    - `-e seed path`
+    - `-e seed path`: ciphers the file `path` (including the working directory) using `seed` as seed
     
-    - `-d seed path`
+    - `-d seed path`: deciphers the file `path` using `seed` as seed
     
-    - `-s`
+    - `-s path`: shows the latest seed used for file `path`
     
-    - `-h`
+    - `-h`: shows a help message (currently in Italian only)
+    
+- **Config files**:
+
+    - must be under the `misc` directory, which must be at the same level as the makefiles 
+    
+    - server.conf (any of this parameter is ignored if a command line option of the same kind is specified valid)
+    
+        - folder
+    
+        - port
+        
+        - threadNumber
+    
+    - client.conf (necessary if the server is running from a different computer, otherwise the default values are 127.0.0.1:8888)
+    
+        - address
+        
+        - port
 
 ### Notes
 
