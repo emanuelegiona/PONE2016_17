@@ -6,13 +6,13 @@ This project consists in a multiplatform client/server file cipher application, 
 
 ## How to use it
 
-- Run the included makefile (`make` and `make clean` commands both for Unix/Linux and Windows); this Windows makefile only works if Visual Studio is installed and from a Developer Command Prompt (where `cl.exe` is set up as the C/C++ compiler)
+- Run the included makefile (`make` and `make clean` commands both for Unix/Linux and Windows); this Windows makefile only works if Visual Studio is installed and is run from a Developer Command Prompt (where `cl.exe` is set up as the C/C++ compiler)
 
 - starting from the same directory where the makefiles are in:
 
-    - /unix/userver.out and client.out are the Unix/Linux executables
+    - `/unix/userver.out` and `client.out` are the Unix/Linux executables
     
-    - wserver.exe and client.exe are the Windows executables
+    - `wserver.exe` and `client.exe` are the Windows executables
     
 - **Server commands**:
 
