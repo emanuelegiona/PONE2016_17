@@ -58,6 +58,14 @@ This project consists in a multiplatform client/server file cipher application, 
 
 ### Notes
 
+- You can find several log files in the `misc` directory:
+
+    - `server.log`: contains all received commands, also listing which IP address they came from and mapping each of them to a request ID, in order to track the outcome of the command with it; additionally, there's the PID too if using the Unix/Linux implementation.
+    
+    - `seeds.log`: each row contains a file path and its relative seed used; it's updated if and only if the encryption is successful.
+    
+    - `error.log`: contains errors arose during I/O operations.
+
 - Theoretically, there is no maximum supported file size; however, tests have run flawlessly with files up to 10 GB for the Unix/Linux implementation and up to 4 GB for the Windows implementation, omitting the remaining tests up to 10 GB, assuming there would be no problem whatsoever
 
 - OpenMP is used during the cipher/decipher phase, while any other threaded operation makes use of native threads (POSIX or WIN32)
