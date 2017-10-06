@@ -16,7 +16,7 @@ This project consists in a multiplatform client/server file cipher application, 
     
 - **Server commands**:
 
-    - `-c path`: sets `path` as working directory, where the server will cipher the files from
+    - `-c path`: sets `path` as working directory, where the server will cipher the files from (necessary if `folder` parameter isn't specified inside `server.conf`)
     
     - `-p port`: uses `port` as port to listen commands from
     
@@ -44,17 +44,17 @@ This project consists in a multiplatform client/server file cipher application, 
     
     - `server.conf` (any of this parameter is ignored if a command line option of the same kind is specified valid)
     
-        - folder
+        - folder (necessary if `-c` is not specified)
     
-        - port
+        - port (default: 8888)
         
-        - threadNumber
+        - threadNumber (default: 1)
     
-    - `client.conf` (necessary if the server is running from a different computer, otherwise the default values are 127.0.0.1:8888)
+    - `client.conf` (necessary if the server is running from a different computer, otherwise the default values are used)
     
-        - address
+        - address (default: 127.0.0.1)
         
-        - port
+        - port (default: 8888)
 
 ### Notes
 
