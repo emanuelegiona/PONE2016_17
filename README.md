@@ -42,7 +42,7 @@ This project consists in a multiplatform client/server file cipher application, 
 
     - must be under the `misc` directory, which must be at the same level as the makefiles 
     
-    - server.conf (any of this parameter is ignored if a command line option of the same kind is specified valid)
+    - `server.conf` (any of this parameter is ignored if a command line option of the same kind is specified valid)
     
         - folder
     
@@ -50,7 +50,7 @@ This project consists in a multiplatform client/server file cipher application, 
         
         - threadNumber
     
-    - client.conf (necessary if the server is running from a different computer, otherwise the default values are 127.0.0.1:8888)
+    - `client.conf` (necessary if the server is running from a different computer, otherwise the default values are 127.0.0.1:8888)
     
         - address
         
