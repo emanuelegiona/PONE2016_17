@@ -48,17 +48,17 @@ It uses a simple XOR to cipher bytes in a file, using a `rand()` generated numbe
     
     - `server.conf` (any of this parameter is ignored if a command line option of the same kind is specified valid)
     
-        - folder (necessary if `-c` is not specified)
+        - `folder=...` (necessary if `-c` is not specified)
     
-        - port (default: 8888)
+        - `port=...` (default: 8888)
         
-        - threadNumber (default: 1)
+        - `threadNumber=...` (default: 1)
     
     - `client.conf` (necessary if the server is running from a different computer, otherwise the default values are used)
     
-        - address (default: 127.0.0.1)
+        - `address=...` (default: 127.0.0.1)
         
-        - port (default: 8888)
+        - `port=...` (default: 8888)
 
 ### Notes
 
