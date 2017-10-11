@@ -2,7 +2,7 @@
 
 ## Multiplatform client/server file cypher application (C, POSIX API, WIN32 API)
 
-This project consists in a multiplatform client/server file cipher application, where the client is installed in the "master" system and the server in the "slave" system.
+This project consists in a multiplatform client/server file cipher application, where the client is installed in the _master_ system and the server in the _slave_ system.
 
 It uses a simple XOR to cipher bytes in a file, using a `rand()` generated number after being specified which seed to use via `srand()`.
 
